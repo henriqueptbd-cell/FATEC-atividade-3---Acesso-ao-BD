@@ -2,6 +2,10 @@
 
 Aplicação web para cadastro de usuários com acesso a banco de dados PostgreSQL, desenvolvida como atividade da disciplina de Desenvolvimento Web I do curso DSM.
 
+## link para acesso ao site
+
+- https://fatec-atividade-3-acesso-ao-bd.onrender.com/
+
 ## Tecnologias
 
 - **Node.js** com Express 5
