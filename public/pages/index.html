@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://www.cps.sp.gov.br/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSM | Cadastro</title>
+</head>
+
+<body>
+    <main class="card">
+        <h1 class="title">Cadastro de Usuários</h1>
+        <input class='user-input' id="user-name" type="text" placeholder="Digite o nome do usuário">
+        <input class='user-input' id="user-email" type="mail" placeholder="Digite o e-mail">
+        <div class="actions">
+            <button class="action-button action-button-primary" id="save-user">Salvar</button>
+            <button class="action-button action-button-secundary" id="clear-user">Limpar</button>
+        </div>
+        <section class="result" id="result">
+
+        </section>
+        <section class="user-list">
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body"></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

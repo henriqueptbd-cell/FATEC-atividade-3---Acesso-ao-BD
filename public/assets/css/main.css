@@ -1,0 +1,200 @@
+/* @import é uma regra do CSS usada para carregar arquivos de estilo externos dentro de uma folha de estilos */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: self-start;
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+.card {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  max-width: 41.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.user-input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #cbd5e1;
+  background-color: #f4f4f4;
+  font: inherit;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.action-button {
+  border: none;
+  padding: 0.8rem 1.1rem;
+  font: inherit;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-0.0625rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.action-button:focus-visible {
+  outline: 0.1875rem solid rgba(37, 99, 235, 0.25);
+  outline-offset: 0.125rem;
+}
+
+.action-button-primary {
+  background-color: #2563eb;
+  color: #fff;
+  box-shadow: 0 0.375rem 0.875rem rgba(37, 99, 235, 0.25);
+}
+
+.action-button-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.action-button-secundary {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  box-shadow: 0 0.375rem 0.875rem rgba(37, 99, 235, 0.25);
+}
+
+.action-button-secundary:hover {
+  background-color: #cbd5e1;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.user-table th,
+.user-table td {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    border-bottom: 0.0625rem solid #e2e8f0;
+}
+
+.user-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.user-table th {
+    background-color: #f8fafc;
+    color: #334155;
+    font-size: 0.9rem;
+}
+
+.user-table-empty {
+  text-align: center;
+  color: #64748b;
+}
+
+.user-table-action-cell {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.delete-user-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #fef2f2;
+  color: #dc2626;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.delete-user-button:hover {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  transform: translateY(-0.0625rem);
+}
+
+.delete-user-button:disabled {
+  background-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.delete-user-button:focus-visible {
+  outline: 0.1875rem solid rgba(220, 38, 38, 0.25);
+  outline-offset: 0.125rem;
+}
+
+.delete-user-button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.result {
+    min-height: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+}
+
+.result.error {
+    background-color: #fef2f2;
+    color: #991b1b;
+}
+
+.result.loading {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+}
+
+.result.success {
+    background-color: #f8fafc;
+    color: #0f172a;
+    border: 0.0625rem solid #e2e8f0;
+}
